@@ -16,8 +16,6 @@ class SplashScreen : AppCompatActivity() {
 //        )
         supportActionBar?.hide()
 
-        // we used the postDelayed(Runnable, time) method
-        // to send a message with a delayed time.
         Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
